@@ -11,7 +11,7 @@ h1, h2, h3
     font-size: 34px
     font-weight: bold
     margin-top: 30px
-    margin-left: 50px
+    margin-left: 20px
     a
       text-decoration: none
       color: #000
@@ -23,23 +23,27 @@ h1, h2, h3
   border-bottom: 1px solid #888
   .folders
     +no-bullets
-    li
-      padding: 10px 0
-      border-bottom: 1px solid #888
+    margin-top: -1px
     a
+      padding: 10px 0
+      display: block
+      width: 230px
+      border-top: 1px solid #888
       text-decoration: none
       color: #000
-      margin-left: 20px
       &:hover
         text-decoration: underline
+        font-style: italic
+
+    span
+      margin-left: 20px
 
     ul.subfolders
-      margin-top: 10px
-      margin-bottom: -11px
-      li
-        border-top: 1px solid #888
+      margin-top: -1px
       a
-        margin-left: 40px
+        border-top: 1px solid #888
+      span
+        margin-left: 35px
 
 #footer
   min-height: 50px

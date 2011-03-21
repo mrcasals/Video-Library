@@ -3,8 +3,9 @@ section#sidebar
     ul
       -root_folders.each do |f|
         li 
-          =link_to f.name, f
+          =link_to "<span>#{f.name}</span>".html_safe, f
           -unless f.folders.empty?
             ul.subfolders
               -f.folders.each do |subf|
-                li =link_to subf.name, subf
+                li 
+                  =link_to "<span>#{subf.name}</span>".html_safe, subf
