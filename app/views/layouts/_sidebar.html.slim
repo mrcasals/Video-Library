@@ -1,0 +1,10 @@
+section#sidebar
+  nav.folders
+    ul
+      -root_folders.each do |f|
+        li 
+          =link_to f.name, f
+          -unless f.folders.empty?
+            ul.subfolders
+              -f.folders.each do |subf|
+                li =link_to subf.name, subf
