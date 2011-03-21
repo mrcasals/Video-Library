@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Video::Application.load_tasks
+VideoLibrary::Application.load_tasks
