@@ -92,7 +92,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   devise
-  inherited_resources (~> 1.2.1)
+  inherited_resources
   rails (= 3.0.5)
   simple-navigation
   slim
