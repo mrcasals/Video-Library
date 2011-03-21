@@ -1,12 +1,47 @@
 @import '_screen'
 
-#header
-  min-height: 100px
-  background-color: #ccc
+h1, h2, h3
+  font-family: sans-serif
 
+#header
+  min-height: 150px
+  // background-color: #ccc
+  border-bottom: 1px solid #888
+  h1
+    font-size: 34px
+    font-weight: bold
+    margin-top: 30px
+    margin-left: 50px
+    a
+      text-decoration: none
+      color: #000
+
+@import "compass/utilities/lists/bullets"
 #sidebar
-  background-color: #888
+  // background-color: #888
+  border-right: 1px solid #888
+  border-bottom: 1px solid #888
+  .folders
+    +no-bullets
+    li
+      padding: 10px 0
+      border-bottom: 1px solid #888
+    a
+      text-decoration: none
+      color: #000
+      margin-left: 20px
+      &:hover
+        text-decoration: underline
+
+    ul.subfolders
+      margin-top: 10px
+      margin-bottom: -11px
+      li
+        border-top: 1px solid #888
+      a
+        margin-left: 40px
 
 #footer
   min-height: 50px
   background-color: #ccc
+  border-top: 1px solid #888
