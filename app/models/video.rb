@@ -1,6 +1,6 @@
 class Video < ActiveRecord::Base
 
-  belong_to :folder
+  belongs_to :folder
 
   default_scope order(:name)
 

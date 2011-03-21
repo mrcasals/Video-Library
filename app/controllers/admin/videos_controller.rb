@@ -1,11 +1,10 @@
-class FoldersController < Admin::ApplicationController
+class VideosController < Admin::ApplicationController
 
   inherit_resources
-  belongs_to :folder, :optional => true
 
   def create
-    @folder = Folder.new(params[:folder])
-    @folder.parent = current_folder if current_folder
+    @video = Video.new(params[:video])
+    @video.folder = current_folder
 
     create! do |success, failure|
       success.html{

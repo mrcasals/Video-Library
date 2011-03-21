@@ -10,11 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110321145539) do
+ActiveRecord::Schema.define(:version => 20110321151227) do
 
   create_table "folders", :force => true do |t|
     t.string  "name"
     t.integer "parent_id"
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string  "name"
+    t.text    "description"
+    t.integer "length"
+    t.integer "folder_id"
   end
 
 end

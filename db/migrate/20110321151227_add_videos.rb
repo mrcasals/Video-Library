@@ -5,6 +5,7 @@ class AddVideos < ActiveRecord::Migration
       t.text :description
       t.integer :length
       t.references :folder
+    end
   end
 
   def self.down
