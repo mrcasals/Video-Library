@@ -12,6 +12,8 @@ VideoLibrary::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+    resources :folders
+    resources :videos
 
   # Sample resource route with options:
   #   resources :products do
@@ -40,15 +42,15 @@ VideoLibrary::Application.routes.draw do
   #   end
 
   # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+    namespace :admin do
+      # Directs /admin/products/* to Admin::ProductsController
+      # (app/controllers/admin/products_controller.rb)
+      resources :folders
+    end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "folders#index"
 
   # See how all your routes lay out with "rake routes"
 
