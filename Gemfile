@@ -5,6 +5,7 @@ gem 'devise'
 gem 'compass'
 gem 'slim'
 gem 'simple-navigation'
+gem 'inherited_resources', '~> 1.2.1'''
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
