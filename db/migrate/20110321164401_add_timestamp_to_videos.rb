@@ -1,7 +1,7 @@
 class AddTimestampToVideos < ActiveRecord::Migration
   def self.up
     change_table :videos do |t|
-      t.timestamp
+      t.timestamps
     end
   end
 

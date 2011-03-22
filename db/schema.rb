@@ -18,11 +18,13 @@ ActiveRecord::Schema.define(:version => 20110321164401) do
   end
 
   create_table "videos", :force => true do |t|
-    t.string  "name"
-    t.text    "description"
-    t.integer "length"
-    t.integer "folder_id"
-    t.string  "link"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "length"
+    t.integer  "folder_id"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

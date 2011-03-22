@@ -592,29 +592,32 @@ h1, h2, h3 {
   text-decoration: none;
   color: black;
 }
-/* line 34, ../../app/stylesheets/screen.sass */
-#sidebar .folders a:hover {
-  text-decoration: underline;
-  font-style: italic;
+/* line 37, ../../app/stylesheets/screen.sass */
+#sidebar .folders a:hover span {
+  margin-left: 25px;
 }
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 43, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   border-top: 1px solid #888888;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
+#sidebar .folders ul.subfolders a:hover span {
+  margin-left: 40px;
+}
+/* line 50, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 53, ../../app/stylesheets/screen.sass */
 #footer {
   min-height: 50px;
   background-color: #cccccc;
