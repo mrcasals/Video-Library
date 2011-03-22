@@ -34,4 +34,5 @@ class FoldersController < Admin::ApplicationController
     else
       redirect_to admin_folder_path
     end
+  end
 end
