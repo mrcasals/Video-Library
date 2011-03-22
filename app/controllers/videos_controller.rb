@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   actions :index, :show
 
   def collection
-    @videos ||= end_of_association_chain.last_published(5)
+    @videos ||= end_of_association_chain.unescoped.last_published(5)
   end
 
 end
