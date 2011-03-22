@@ -6,6 +6,7 @@ gem 'compass'
 gem 'slim', :require => "slim/rails"
 gem 'simple-navigation'
 gem 'inherited_resources'
+gem 'heroku'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
