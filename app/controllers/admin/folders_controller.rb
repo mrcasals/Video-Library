@@ -1,4 +1,4 @@
-class FoldersController < Admin::ApplicationController
+class Admin::FoldersController < Admin::ApplicationController
 
   inherit_resources
   belongs_to :folder, :optional => true

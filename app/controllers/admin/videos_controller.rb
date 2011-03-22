@@ -1,4 +1,4 @@
-class VideosController < Admin::ApplicationController
+class Admin::VideosController < Admin::ApplicationController
 
   inherit_resources
 
