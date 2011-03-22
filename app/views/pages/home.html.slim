@@ -5,10 +5,10 @@ section.videos.last5
       .video-info
         -unless video.folder.parent.nil?
           =link_to video.folder.parent.name, video.folder.parent
-        -else
-          =link_to video.folder.name, video.folder
+          =" - "
+        =link_to video.folder.name, video.folder
         -if video.year
-          ="Any: #{video.year}"
+          =" | Any: #{video.year}"
         -if video.length
-          ="Durada: #{video.length}"
+          =" | Durada: #{video.length}"
       =truncate(video.description, :length => 250, :separator => ' ')
