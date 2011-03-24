@@ -1,0 +1,14 @@
+section.folder
+  -Video.by_folder(@folder).each do |video|
+    article.video
+      h3 =link_to video.name, video
+      .video-info
+        -unless video.folder.parent.nil?
+          =link_to video.folder.parent.name, video.folder.parent
+          =" - "
+        =link_to video.folder.name, video.folder
+        -if video.year
+          =" | Any: #{video.year}"
+        -if video.length
+          =" | Durada: #{video.length}"
+      =truncate(video.description, :length => 250, :separator => ' ')

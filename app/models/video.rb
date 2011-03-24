@@ -8,4 +8,9 @@ class Video < ActiveRecord::Base
 
   validates :name, :link, :folder_id, presence: true
 
+  def self.by_folder(folder)
+    folders = Folder.arel_table
+    joins(:folder).where(folders[:parent_id].eq(folder.id).or(folders[:id].eq(folder.id)))
+  end
+
 end
