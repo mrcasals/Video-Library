@@ -1,3 +1,7 @@
+@import "compass/utilities/lists/bullets"
+@import "compass/layout/sticky-footer"
++sticky-footer(51px, "#wrapper", "#content_footer", "#footer")
+
 @import '_screen'
 @import '_content'
 
@@ -22,7 +26,6 @@ h1, h2, h3
     font-style: italic
     margin-left: 20px
 
-@import "compass/utilities/lists/bullets"
 #sidebar
   // background-color: #888
   border-right: 1px solid #888
@@ -57,6 +60,6 @@ h1, h2, h3
         margin-left: 35px
 
 #footer
-  min-height: 50px
+  height: 50px
   background-color: #ccc
   border-top: 1px solid #888

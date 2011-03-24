@@ -1,3 +1,28 @@
+/* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -51px;
+}
+/* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrapper #content_footer {
+  height: 51px;
+}
+
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 51px;
+}
+
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html, body {
   margin: 0;
@@ -511,14 +536,14 @@ body #container {
   *zoom: 1;
 }
 /* line 38, ../../app/stylesheets/_screen.scss */
-body #header, body #footer {
+body #header {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body #header, * html body #footer {
+* html body #header {
   overflow-x: hidden;
 }
 /* line 40, ../../app/stylesheets/_screen.scss */
@@ -575,30 +600,39 @@ body #content {
 #content .video-info a:hover {
   text-decoration: underline;
 }
+/* line 21, ../../app/stylesheets/_content.sass */
+#content .video-link {
+  margin-top: 20px;
+  font-family: Georgia, serif;
+}
+/* line 24, ../../app/stylesheets/_content.sass */
+#content .video-link a {
+  color: black;
+}
 
-/* line 4, ../../app/stylesheets/screen.sass */
+/* line 8, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 7, ../../app/stylesheets/screen.sass */
+/* line 11, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #888888;
 }
-/* line 10, ../../app/stylesheets/screen.sass */
+/* line 14, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 15, ../../app/stylesheets/screen.sass */
+/* line 19, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 18, ../../app/stylesheets/screen.sass */
+/* line 22, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
@@ -606,12 +640,12 @@ h1, h2, h3 {
   margin-left: 20px;
 }
 
-/* line 26, ../../app/stylesheets/screen.sass */
+/* line 29, ../../app/stylesheets/screen.sass */
 #sidebar {
   border-right: 1px solid #888888;
   border-bottom: 1px solid #888888;
 }
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 33, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -622,7 +656,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 36, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0;
   display: block;
@@ -631,34 +665,34 @@ h1, h2, h3 {
   text-decoration: none;
   color: black;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover span {
   margin-left: 25px;
 }
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 52, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 54, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   border-top: 1px solid #888888;
 }
-/* line 54, ../../app/stylesheets/screen.sass */
+/* line 57, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a:hover span {
   margin-left: 40px;
 }
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 59, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 59, ../../app/stylesheets/screen.sass */
+/* line 62, ../../app/stylesheets/screen.sass */
 #footer {
-  min-height: 50px;
+  height: 50px;
   background-color: #cccccc;
   border-top: 1px solid #888888;
 }

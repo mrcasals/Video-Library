@@ -1,0 +1,15 @@
+section.video
+  article.video
+    h3 =link_to @video.name, @video.link
+    .video-info
+      -unless @video.folder.parent.nil?
+        =link_to @video.folder.parent.name, @video.folder.parent
+        =" - "
+      =link_to @video.folder.name, @video.folder
+      -if @video.year
+        =" | Any: #{@video.year}"
+      -if @video.length
+        =" | Durada: #{@video.length}"
+    =@video.description
+    .video-link
+      =link_to "Obre el vídeo", @video.link

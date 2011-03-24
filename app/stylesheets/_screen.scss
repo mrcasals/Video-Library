@@ -35,7 +35,7 @@ form.bp {
 body {
   #container {
     @include container; }
-  #header, #footer {
+  #header {
     @include column($blueprint-grid-columns); }
   #sidebar {
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
