@@ -1,1 +1,9 @@
 #footer
+  .footer-text
+    | 2011 &copy; Disseny creat per 
+    =link_to "Marc Riera (@mrc2407)", "http://nuvolsgratis.cat"
+    -if current_user
+      | . Estàs connectat com a 
+      =current_user.username
+      | . 
+      =link_to "Desconnecta't", destroy_user_session_path

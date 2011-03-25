@@ -718,4 +718,15 @@ h1, h2, h3 {
   height: 50px;
   background-color: #cccccc;
   border-top: 1px solid #888888;
+  font-family: Georgia, sans;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 50px;
+  text-align: center;
+}
+/* line 84, ../../app/stylesheets/screen.sass */
+#footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
