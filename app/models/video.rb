@@ -1,6 +1,7 @@
 class Video < ActiveRecord::Base
 
   belongs_to :folder
+  has_friendly_id :name, :use_slug => true
 
   scope(:last_published, lambda {|limit|
     order(Video.arel_table[:created_at].desc).limit(limit)
