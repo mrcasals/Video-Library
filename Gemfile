@@ -5,6 +5,7 @@ gem 'devise'
 gem 'compass'
 gem 'slim', :require => "slim/rails"
 gem 'simple-navigation'
+gem "friendly_id", "~> 3.2.1"
 gem 'inherited_resources'
 gem 'heroku'
 

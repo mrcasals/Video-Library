@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.0.5)
     activesupport (3.0.5)
     arel (2.0.9)
+    babosa (0.3.0)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
     compass (0.10.6)
@@ -39,6 +40,8 @@ GEM
       warden (~> 1.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    friendly_id (3.2.1.1)
+      babosa (~> 0.3.0)
     haml (3.0.25)
     has_scope (0.5.0)
     heroku (1.18.3)
@@ -101,6 +104,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   devise
+  friendly_id (~> 3.2.1)
   heroku
   inherited_resources
   rails (= 3.0.5)
