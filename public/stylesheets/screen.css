@@ -619,33 +619,48 @@ h1, h2, h3 {
 #header {
   min-height: 150px;
   border-bottom: 1px solid #888888;
+  position: relative;
 }
-/* line 14, ../../app/stylesheets/screen.sass */
+/* line 15, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 19, ../../app/stylesheets/screen.sass */
+/* line 20, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 22, ../../app/stylesheets/screen.sass */
+/* line 23, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-
 /* line 29, ../../app/stylesheets/screen.sass */
+#header #user-links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: left;
+}
+/* line 34, ../../app/stylesheets/screen.sass */
+#header #user-links a {
+  margin-left: 5px;
+  padding: 5px 5px 1px;
+  border: 1px solid #888888;
+  border-bottom: 1px solid white;
+}
+
+/* line 40, ../../app/stylesheets/screen.sass */
 #sidebar {
   border-right: 1px solid #888888;
   border-bottom: 1px solid #888888;
 }
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -656,7 +671,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 36, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0;
   display: block;
@@ -665,40 +680,40 @@ h1, h2, h3 {
   text-decoration: none;
   color: black;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 54, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
   background: #dddddd;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 58, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover span {
   margin-left: 25px;
 }
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 61, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 53, ../../app/stylesheets/screen.sass */
+/* line 64, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 55, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   border-top: 1px solid #888888;
 }
-/* line 57, ../../app/stylesheets/screen.sass */
+/* line 68, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a:hover {
   background: #dddddd;
 }
-/* line 59, ../../app/stylesheets/screen.sass */
+/* line 70, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a:hover span {
   margin-left: 40px;
 }
-/* line 61, ../../app/stylesheets/screen.sass */
+/* line 72, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;

@@ -48,6 +48,8 @@ VideoLibrary::Application.routes.draw do
       # Directs /admin/products/* to Admin::ProductsController
       # (app/controllers/admin/products_controller.rb)
       resources :folders
+      resources :videos
+      resource :dashboards, :only => [:show], :path => "/"
     end
 
   # You can have the root of your site routed with "root"
