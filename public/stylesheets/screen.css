@@ -653,14 +653,16 @@ h1, h2, h3 {
   padding: 5px 5px 1px;
   border: 1px solid #888888;
   border-bottom: 1px solid white;
+  color: #444444;
+  text-decoration: none;
 }
 
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 #sidebar {
   border-right: 1px solid #888888;
   border-bottom: 1px solid #888888;
 }
-/* line 44, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -671,49 +673,45 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0;
   display: block;
   width: 230px;
   border-top: 1px solid #888888;
   text-decoration: none;
-  color: black;
+  color: #444444;
 }
-/* line 54, ../../app/stylesheets/screen.sass */
+/* line 56, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
-  background: #dddddd;
+  background: #eeeeee;
 }
-/* line 58, ../../app/stylesheets/screen.sass */
+/* line 60, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover span {
   margin-left: 25px;
 }
-/* line 61, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 68, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   border-top: 1px solid #888888;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
-#sidebar .folders ul.subfolders a:hover {
-  background: #dddddd;
-}
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a:hover span {
   margin-left: 40px;
 }
-/* line 72, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 75, ../../app/stylesheets/screen.sass */
+/* line 76, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -724,7 +722,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 84, ../../app/stylesheets/screen.sass */
+/* line 85, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;
