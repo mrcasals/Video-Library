@@ -1,6 +1,7 @@
 class Video < ActiveRecord::Base
 
   belongs_to :folder
+  belongs_to :user
   has_friendly_id :name, :use_slug => true
 
   scope(:last_published, lambda {|limit|
