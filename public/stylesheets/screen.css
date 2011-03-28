@@ -406,7 +406,7 @@ body.bp .bottom {
 }
 /* line 8, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
-  background: url('/images/grid.png?1301076355');
+  background: url('/images/grid.png?1300731461');
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error {
@@ -610,44 +610,44 @@ body #content {
   color: black;
 }
 
-/* line 8, ../../app/stylesheets/screen.sass */
+/* line 9, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 11, ../../app/stylesheets/screen.sass */
+/* line 12, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #888888;
   position: relative;
 }
-/* line 15, ../../app/stylesheets/screen.sass */
+/* line 16, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 20, ../../app/stylesheets/screen.sass */
+/* line 21, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 24, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-/* line 29, ../../app/stylesheets/screen.sass */
+/* line 30, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 34, ../../app/stylesheets/screen.sass */
+/* line 35, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
@@ -657,12 +657,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* line 42, ../../app/stylesheets/screen.sass */
+/* line 43, ../../app/stylesheets/screen.sass */
 #sidebar {
   border-right: 1px solid #888888;
   border-bottom: 1px solid #888888;
 }
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -673,7 +673,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0;
   display: block;
@@ -682,36 +682,52 @@ h1, h2, h3 {
   text-decoration: none;
   color: #444444;
 }
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 57, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
-  background: #eeeeee;
+  background: #cccccc;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 62, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover span {
   margin-left: 25px;
+  -moz-transition-property: margin;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 69, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   border-top: 1px solid #888888;
 }
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 74, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a:hover span {
   margin-left: 40px;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 76, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -722,7 +738,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 85, ../../app/stylesheets/screen.sass */
+/* line 88, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;

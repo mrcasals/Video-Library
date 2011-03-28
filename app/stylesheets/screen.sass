@@ -1,5 +1,6 @@
 @import "compass/utilities/lists/bullets"
 @import "compass/layout/sticky-footer"
+@import "compass/css3/transition"
 +sticky-footer(51px, "#wrapper", "#content_footer", "#footer")
 
 @import '_screen'
@@ -56,9 +57,11 @@ h1, h2, h3
       &:hover
         // text-decoration: underline
         // font-style: italic
-        background: #eee
+        background: #ccc
+        +transition('background', 0.5s)
         span
           margin-left: 25px
+          +transition('margin', 1s)
 
     span
       margin-left: 20px

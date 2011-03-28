@@ -1,6 +1,6 @@
 nav#user-links
   -if current_user
-    =link_to "Admin", admin_dashboards_path
+    =link_to "Administració", admin_dashboards_path
     =link_to "Desconnecta't", destroy_user_session_path
   -else
     =link_to "Connecta't", new_user_session_path
