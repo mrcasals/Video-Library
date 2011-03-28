@@ -10,5 +10,6 @@ section.folder
         -if video.year
           =" | Any: #{video.year}"
         -if video.length
-          =" | Durada: #{video.length}"
+          =" | Durada: #{video.length} min."
+        =" | Enviat per #{video.user.name}"
       =truncate(video.description, :length => 250, :separator => ' ')

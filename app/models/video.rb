@@ -8,7 +8,7 @@ class Video < ActiveRecord::Base
     order(Video.arel_table[:created_at].desc).limit(limit)
   })
 
-  validates :name, :link, :folder_id, presence: true
+  validates :name, :link, :folder_id, :user_id, presence: true
 
   def self.by_folder(folder)
     folders = Folder.arel_table
