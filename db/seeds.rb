@@ -10,4 +10,4 @@ User.create(:username => "admin", :password => "test123", :password_confirmation
 
 Folder.create([{:name => "Films"}, {:name => "Documentals"}])
 
-Video.create([{:name => "Video 1", :link => "blah", :folder_id => 1, :user_id => 1}, {:name => "Video 2", :link => "blah", :folder_id => 2, :user_id => 1}])
+Video.create([{:name => "Video 1", :length => 120, :year => 2001, :link => "blah", :folder_id => 1, :user_id => 1}, {:name => "Video 2", :link => "blah", :folder_id => 2, :user_id => 1}])
