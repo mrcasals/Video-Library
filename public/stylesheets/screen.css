@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
@@ -569,6 +570,54 @@ body #content {
   overflow-x: hidden;
 }
 
+/* Import iconic
+ *------------------------------------------------------------------------------ */
+@font-face {
+  font-family: "IconicStroke";
+  src: url("/font/iconic_stroke.eot");
+  src: local("☺"), url("/font/iconic_stroke.ttf") format("truetype"), url("/font/iconic_stroke.svg#iconic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* IMPORTANT: To enable icons, use the font files located at: */
+/* https://github.com/ubuwaits/css3-buttons/tree/gh-pages/font */
+/* general styles */
+/* line 14, ../../app/stylesheets/_buttons.sass */
+body {
+  text-rendering: optimizeLegibility;
+}
+
+/* minimal
+ ******************************************************************************* */
+/* clean gray
+ ******************************************************************************* */
+/* clean green (inspired by okcupid.com)
+ ******************************************************************************* */
+/* pale blue (inspired by okcupid.com)
+ ******************************************************************************* */
+/* blue pill (inspired by iTunes)
+ *   As of 19 Sep 2010 there is a bug in Chrome/Win affecting this button:
+ *   http://code.google.com/p/chromium/issues/detail?id=29427
+ ******************************************************************************* */
+/* dribbble (inspired by dribbble.com)
+ ******************************************************************************* */
+/* slick black
+ ******************************************************************************* */
+/* thoughtbot (inspired by thoughtbot.com)
+ ******************************************************************************* */
+/* fat blue
+ ******************************************************************************* */
+/* ios blue (inspired by Apple iOS buttons)
+ ******************************************************************************* */
+/* ios purple (inspired by Apple iOS buttons)
+ ******************************************************************************* */
+/* ios yellow (inspired by Apple iOS buttons)
+ ******************************************************************************* */
+/* shiny blue (inspired by rdio iphone interface)
+ ******************************************************************************* */
+/* iconic
+ ******************************************************************************* */
 /* line 2, ../../app/stylesheets/_content.sass */
 #content article {
   margin: 20px;
@@ -610,44 +659,121 @@ body #content {
   color: black;
 }
 
-/* line 9, ../../app/stylesheets/screen.sass */
+/* line 3, ../../app/stylesheets/_admin.sass */
+#admin #content .video {
+  padding-bottom: 20px;
+  overflow: auto;
+}
+/* line 6, ../../app/stylesheets/_admin.sass */
+#admin #content .video .video-title {
+  width: 350px;
+  float: left;
+}
+/* line 9, ../../app/stylesheets/_admin.sass */
+#admin #content .video .video-info {
+  float: right;
+}
+/* line 11, ../../app/stylesheets/_admin.sass */
+#admin #content .video .video-info a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* line 12, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 12, ../../app/stylesheets/screen.sass */
+/* line 15, ../../app/stylesheets/screen.sass */
+.button {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background: #eeeeee;
+  background: -moz-linear-gradient(0% 100% 90deg, #cccccc, #eeeeee);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#cccccc));
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid #bbbbbb;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #333333;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 10px;
+  margin-left: 5px;
+  text-align: center;
+  text-shadow: 0 1px 0 #eeeeee;
+}
+/* line 18, ../../app/stylesheets/_buttons.sass */
+.button:hover {
+  cursor: pointer;
+}
+/* line 20, ../../app/stylesheets/_buttons.sass */
+.button::-moz-focus-inner {
+  border: 0;
+}
+/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.button {
+  *display: inline;
+}
+/* line 81, ../../app/stylesheets/_buttons.sass */
+.button:hover {
+  background: #dddddd;
+  background: -moz-linear-gradient(0% 100% 90deg, #bbbbbb, #dddddd);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), to(#bbbbbb));
+  border: 1px solid #bbbbbb;
+  border-bottom: 1px solid #999999;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #dddddd;
+  text-decoration: none;
+}
+/* line 91, ../../app/stylesheets/_buttons.sass */
+.button:active {
+  border: 1px solid #aaaaaa;
+  border-bottom: 1px solid #888888;
+  -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+  -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+  box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+}
+
+/* line 18, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #cccccc;
   position: relative;
 }
-/* line 16, ../../app/stylesheets/screen.sass */
+/* line 22, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 21, ../../app/stylesheets/screen.sass */
+/* line 27, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 24, ../../app/stylesheets/screen.sass */
+/* line 30, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-/* line 29, ../../app/stylesheets/screen.sass */
+/* line 35, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 34, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
@@ -657,12 +783,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* line 42, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
 #sidebar {
   margin-top: 20px;
   border: 1px solid #cccccc;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 51, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -674,7 +800,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0 1px;
   display: block;
@@ -684,28 +810,28 @@ h1, h2, h3 {
   font-size: 15px;
   color: #666666;
 }
-/* line 57, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
   text-decoration: underline;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 69, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 65, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   font-style: normal;
 }
-/* line 67, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 76, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -716,7 +842,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 85, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;

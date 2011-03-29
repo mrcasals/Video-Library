@@ -1,13 +1,19 @@
 @import "compass/utilities/lists/bullets"
 @import "compass/layout/sticky-footer"
 @import "compass/css3/transition"
+@import "compass/css3/inline-block"
 +sticky-footer(51px, "#wrapper", "#content_footer", "#footer")
 
 @import '_screen'
+@import '_buttons'
 @import '_content'
+@import '_admin'
 
 h1, h2, h3
   font-family: sans-serif
+
+.button
+  +button-clean-gray
 
 #header
   min-height: 150px

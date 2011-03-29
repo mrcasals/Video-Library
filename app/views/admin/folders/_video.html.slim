@@ -1,0 +1,7 @@
+article.video
+  .video-title
+    h3 =link_to video.name, video
+  .video-info
+    -if current_user.admin? || current_user == object.user
+      =link_to "Edita", edit_admin_video_path(video), :class => 'button'
+      =link_to "Elimina", {:action => :destroy}, :id => video, :confirm => "Segur que vols eliminar el vídeo?", :class => 'button'
