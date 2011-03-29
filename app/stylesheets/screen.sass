@@ -11,7 +11,7 @@ h1, h2, h3
 
 #header
   min-height: 150px
-  border-bottom: 1px solid #888
+  border-bottom: 1px solid #ccc
   position: relative
   h1
     font-size: 34px
@@ -23,7 +23,6 @@ h1, h2, h3
       color: #000
   h2
     color: #888
-    // font-family: Georgia, serif
     font-size: 14px
     font-style: italic
     margin-left: 20px
@@ -35,33 +34,28 @@ h1, h2, h3
     a
       margin-left: 5px
       padding: 5px 5px 1px
-      border: 1px solid #888
+      border: 1px solid #ccc
       border-bottom: 1px solid #fff
-      color: #444
+      color: #666
       text-decoration: none
 
 #sidebar
-  // background-color: #888
-  border-right: 1px solid #888
-  border-bottom: 1px solid #888
+  margin-top: 20px
+  border: 1px solid #ccc
   .folders
     +no-bullets
     margin-top: -1px
+    padding-bottom: 20px
     a
-      padding: 10px 0
+      padding: 10px 0 1px
       display: block
       width: 230px
-      border-top: 1px solid #888
       text-decoration: none
-      color: #444
+      font-style: italic
+      font-size: 15px
+      color: #666
       &:hover
-        // text-decoration: underline
-        // font-style: italic
-        background: #ccc
-        +transition('background', 0.5s)
-        span
-          margin-left: 25px
-          +transition('margin', 1s)
+        text-decoration: underline
 
     span
       margin-left: 20px
@@ -69,10 +63,7 @@ h1, h2, h3
     ul.subfolders
       margin-top: -1px
       a
-        border-top: 1px solid #888
-        &:hover
-          span
-            margin-left: 40px
+        font-style: normal
       span
         margin-left: 35px
 

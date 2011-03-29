@@ -618,7 +618,7 @@ h1, h2, h3 {
 /* line 12, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
-  border-bottom: 1px solid #888888;
+  border-bottom: 1px solid #cccccc;
   position: relative;
 }
 /* line 16, ../../app/stylesheets/screen.sass */
@@ -640,32 +640,33 @@ h1, h2, h3 {
   font-style: italic;
   margin-left: 20px;
 }
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 29, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 34, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
-  border: 1px solid #888888;
+  border: 1px solid #cccccc;
   border-bottom: 1px solid white;
-  color: #444444;
+  color: #666666;
   text-decoration: none;
 }
 
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 #sidebar {
-  border-right: 1px solid #888888;
-  border-bottom: 1px solid #888888;
+  margin-top: 20px;
+  border: 1px solid #cccccc;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
+  padding-bottom: 20px;
 }
 /* line 11, ../../../../../.rvm/gems/ruby-1.9.2-p136@video-library/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 #sidebar .folders li {
@@ -673,61 +674,38 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
-  padding: 10px 0;
+  padding: 10px 0 1px;
   display: block;
   width: 230px;
-  border-top: 1px solid #888888;
   text-decoration: none;
-  color: #444444;
+  font-style: italic;
+  font-size: 15px;
+  color: #666666;
 }
 /* line 57, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
-  background: #cccccc;
-  -moz-transition-property: background;
-  -webkit-transition-property: background;
-  -o-transition-property: background;
-  transition-property: background;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  text-decoration: underline;
 }
-/* line 62, ../../app/stylesheets/screen.sass */
-#sidebar .folders a:hover span {
-  margin-left: 25px;
-  -moz-transition-property: margin;
-  -webkit-transition-property: margin;
-  -o-transition-property: margin;
-  transition-property: margin;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-}
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 60, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 69, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
-  border-top: 1px solid #888888;
+  font-style: normal;
 }
-/* line 74, ../../app/stylesheets/screen.sass */
-#sidebar .folders ul.subfolders a:hover span {
-  margin-left: 40px;
-}
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 70, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -738,7 +716,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 88, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;
