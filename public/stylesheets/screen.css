@@ -673,19 +673,30 @@ body {
   color: black;
 }
 /* line 37, ../../app/stylesheets/_content.sass */
+#content form input[type=text], #content form input[type=password], #content form textarea {
+  color: #666666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* line 41, ../../app/stylesheets/_content.sass */
 #content form p {
   margin-bottom: 10px;
 }
-/* line 39, ../../app/stylesheets/_content.sass */
+/* line 43, ../../app/stylesheets/_content.sass */
 #content .sessions-links {
   margin-top: 20px;
 }
-/* line 41, ../../app/stylesheets/_content.sass */
+/* line 45, ../../app/stylesheets/_content.sass */
 #content .sessions-links a {
   color: #666666;
   text-decoration: none;
 }
-/* line 44, ../../app/stylesheets/_content.sass */
+/* line 48, ../../app/stylesheets/_content.sass */
 #content .sessions-links a:hover {
   text-decoration: underline;
 }
@@ -710,12 +721,12 @@ body {
   font-style: normal;
 }
 
-/* line 12, ../../app/stylesheets/screen.sass */
+/* line 13, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 15, ../../app/stylesheets/screen.sass */
+/* line 16, ../../app/stylesheets/screen.sass */
 .button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -772,39 +783,39 @@ h1, h2, h3 {
   box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
 }
 
-/* line 18, ../../app/stylesheets/screen.sass */
+/* line 19, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #cccccc;
   position: relative;
 }
-/* line 22, ../../app/stylesheets/screen.sass */
+/* line 23, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 27, ../../app/stylesheets/screen.sass */
+/* line 28, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 31, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 36, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 41, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
@@ -814,12 +825,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 #sidebar {
   margin-top: 20px;
   border: 1px solid #cccccc;
 }
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 52, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -831,7 +842,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 55, ../../app/stylesheets/screen.sass */
+/* line 56, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0 1px;
   display: block;
@@ -841,28 +852,28 @@ h1, h2, h3 {
   font-size: 15px;
   color: #666666;
 }
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 64, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
   text-decoration: underline;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 69, ../../app/stylesheets/screen.sass */
+/* line 70, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 72, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   font-style: normal;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 74, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 77, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -873,7 +884,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 85, ../../app/stylesheets/screen.sass */
+/* line 86, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;
