@@ -1,7 +1,17 @@
 article.video
-  .video-title
-    h3 =link_to video.name, video
   .video-info
+    h3 =link_to video.name, video
+    .video-info
+      -unless video.folder.parent.nil?
+        =link_to video.folder.parent.name, video.folder.parent
+        =" - "
+      =link_to video.folder.name, video.folder
+      -if video.year
+        =" | Any: #{video.year}"
+      -if video.length
+        =" | Durada: #{video.length} min."
+      =" | Enviat per #{video.user.name}"
+  .actions
     -if current_user.admin? || current_user == object.user
       =link_to "Edita", edit_admin_video_path(video), :class => 'button'
       =link_to "Elimina", {:action => :destroy}, :id => video, :confirm => "Segur que vols eliminar el vídeo?", :class => 'button'

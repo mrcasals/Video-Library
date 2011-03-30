@@ -705,18 +705,27 @@ body {
 #admin #content .video {
   padding-bottom: 20px;
   overflow: auto;
+  padding-bottom: 0;
+  margin-bottom: 10px;
 }
-/* line 6, ../../app/stylesheets/_admin.sass */
-#admin #content .video .video-title {
-  width: 350px;
+/* line 8, ../../app/stylesheets/_admin.sass */
+#admin #content .video .video-info {
+  width: 495px;
   float: left;
 }
-/* line 9, ../../app/stylesheets/_admin.sass */
-#admin #content .video .video-info {
-  float: right;
+/* line 12, ../../app/stylesheets/_admin.sass */
+#admin #content .video .video-info h3 a {
+  color: black;
+  text-decoration: none;
+  font-style: normal;
 }
-/* line 11, ../../app/stylesheets/_admin.sass */
-#admin #content .video .video-info a {
+/* line 16, ../../app/stylesheets/_admin.sass */
+#admin #content .video .actions {
+  float: right;
+  width: 135px;
+}
+/* line 19, ../../app/stylesheets/_admin.sass */
+#admin #content .video .actions a {
   text-decoration: none;
   font-style: normal;
 }
