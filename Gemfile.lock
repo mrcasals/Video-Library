@@ -40,6 +40,7 @@ GEM
       warden (~> 1.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    flash_messages_helper (0.2.1)
     friendly_id (3.2.1.1)
       babosa (~> 0.3.0)
     haml (3.0.25)
@@ -104,6 +105,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   devise
+  flash_messages_helper
   friendly_id (~> 3.2.1)
   heroku
   inherited_resources

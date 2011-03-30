@@ -12,8 +12,7 @@
       <%= render :partial => 'layouts/header' %>
       <%= render :partial => 'layouts/sidebar' %>
       <section id="content">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <%= flash_messages %>
         <%= yield %>
       </section>
     </div>

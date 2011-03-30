@@ -8,6 +8,7 @@ gem 'simple-navigation'
 gem "friendly_id", "~> 3.2.1"
 gem 'inherited_resources'
 gem 'heroku'
+gem 'flash_messages_helper'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
