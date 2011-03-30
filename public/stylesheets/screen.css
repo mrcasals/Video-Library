@@ -618,21 +618,25 @@ body {
  ******************************************************************************* */
 /* iconic
  ******************************************************************************* */
-/* line 2, ../../app/stylesheets/_content.sass */
-#content article {
+/* line 1, ../../app/stylesheets/_content.sass */
+#content {
   margin: 20px;
 }
-/* line 4, ../../app/stylesheets/_content.sass */
+/* line 3, ../../app/stylesheets/_content.sass */
+#content article {
+  margin-bottom: 20px;
+}
+/* line 5, ../../app/stylesheets/_content.sass */
 #content h3 {
   font-size: 26px;
   font-weight: bold;
 }
-/* line 7, ../../app/stylesheets/_content.sass */
+/* line 8, ../../app/stylesheets/_content.sass */
 #content h3 a {
   color: black;
   text-decoration: none;
 }
-/* line 10, ../../app/stylesheets/_content.sass */
+/* line 11, ../../app/stylesheets/_content.sass */
 #content .video-info {
   margin-bottom: 10px;
   color: #888888;
@@ -640,23 +644,36 @@ body {
   font-size: 13px;
   font-style: italic;
 }
-/* line 16, ../../app/stylesheets/_content.sass */
+/* line 17, ../../app/stylesheets/_content.sass */
 #content .video-info a {
   color: #888888;
   text-decoration: none;
 }
-/* line 19, ../../app/stylesheets/_content.sass */
+/* line 20, ../../app/stylesheets/_content.sass */
 #content .video-info a:hover {
   text-decoration: underline;
 }
-/* line 21, ../../app/stylesheets/_content.sass */
+/* line 22, ../../app/stylesheets/_content.sass */
 #content .video-link {
   margin-top: 20px;
   font-family: Georgia, serif;
 }
-/* line 24, ../../app/stylesheets/_content.sass */
+/* line 25, ../../app/stylesheets/_content.sass */
 #content .video-link a {
   color: black;
+}
+/* line 28, ../../app/stylesheets/_content.sass */
+#content .sessions-links {
+  margin-top: 20px;
+}
+/* line 30, ../../app/stylesheets/_content.sass */
+#content .sessions-links a {
+  color: #666666;
+  text-decoration: none;
+}
+/* line 33, ../../app/stylesheets/_content.sass */
+#content .sessions-links a:hover {
+  text-decoration: underline;
 }
 
 /* line 3, ../../app/stylesheets/_admin.sass */
