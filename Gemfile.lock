@@ -52,6 +52,8 @@ GEM
     inherited_resources (1.2.1)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
+    kaminari (0.10.4)
+      rails (>= 3.0.0)
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -109,6 +111,7 @@ DEPENDENCIES
   friendly_id (~> 3.2.1)
   heroku
   inherited_resources
+  kaminari
   rails (= 3.0.5)
   simple-navigation
   slim

@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @videos = Video.last_published(5)
+    @videos = Video.order_by_desc(:created_at).page(params[:page]).per(2)
 
   end
 end
