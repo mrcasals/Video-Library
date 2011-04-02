@@ -700,6 +700,22 @@ body {
 #content .sessions-links a:hover {
   text-decoration: underline;
 }
+/* line 50, ../../app/stylesheets/_content.sass */
+#content .pagination {
+  padding-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #999999;
+}
+/* line 55, ../../app/stylesheets/_content.sass */
+#content .pagination a {
+  color: #666666;
+  text-decoration: none;
+}
+/* line 58, ../../app/stylesheets/_content.sass */
+#content .pagination a:hover {
+  text-decoration: underline;
+}
 
 /* line 3, ../../app/stylesheets/_admin.sass */
 #admin #content .video {
