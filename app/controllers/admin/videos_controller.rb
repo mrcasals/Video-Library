@@ -2,6 +2,12 @@ class Admin::VideosController < Admin::ApplicationController
 
   inherit_resources
 
+  def update
+    update!{
+      url_for :action => :edit
+    }
+  end
+
   def create
     @video = Video.new(params[:video])
     @video.folder = current_folder

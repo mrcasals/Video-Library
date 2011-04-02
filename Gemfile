@@ -10,6 +10,7 @@ gem 'inherited_resources'
 gem 'heroku'
 gem 'flash_messages_helper'
 gem 'kaminari'
+gem 'simple_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
