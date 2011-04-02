@@ -1,0 +1,4 @@
+section.form
+  h3 Edita el vídeo
+  =simple_form_for :video, @video, :url => edit_admin_video_path(@video) do |f|
+    =render :partial => 'form', :object=>f
