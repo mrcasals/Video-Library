@@ -753,6 +753,7 @@ form label {
 }
 /* line 11, ../../app/stylesheets/_forms.sass */
 form .input {
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
