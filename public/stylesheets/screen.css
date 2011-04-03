@@ -672,47 +672,32 @@ body {
 #content .video-link a {
   color: black;
 }
-/* line 73, ../../app/stylesheets/_content.sass */
-#content form input[type=text], #content form input[type=password], #content form textarea {
-  color: #666666;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  padding: 5px;
-}
-/* line 81, ../../app/stylesheets/_content.sass */
-#content form p {
-  margin-bottom: 10px;
-}
-/* line 85, ../../app/stylesheets/_content.sass */
+/* line 71, ../../app/stylesheets/_content.sass */
 #content .sessions-links {
   margin-top: 20px;
 }
-/* line 89, ../../app/stylesheets/_content.sass */
+/* line 75, ../../app/stylesheets/_content.sass */
 #content .sessions-links a {
   color: #666666;
   text-decoration: none;
 }
-/* line 95, ../../app/stylesheets/_content.sass */
+/* line 81, ../../app/stylesheets/_content.sass */
 #content .sessions-links a:hover {
   text-decoration: underline;
 }
-/* line 99, ../../app/stylesheets/_content.sass */
+/* line 85, ../../app/stylesheets/_content.sass */
 #content .pagination {
   padding-top: 20px;
   text-align: center;
   color: #999999;
 }
-/* line 107, ../../app/stylesheets/_content.sass */
+/* line 93, ../../app/stylesheets/_content.sass */
 #content .pagination a {
   color: #666666;
   text-decoration: none;
   font-style: italic;
 }
-/* line 115, ../../app/stylesheets/_content.sass */
+/* line 101, ../../app/stylesheets/_content.sass */
 #content .pagination a:hover {
   text-decoration: underline;
 }
@@ -746,12 +731,37 @@ body {
   font-style: normal;
 }
 
-/* line 13, ../../app/stylesheets/screen.sass */
+/* line 2, ../../app/stylesheets/_forms.sass */
+form input[type=text], form input[type=password], form textarea {
+  color: #666666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border-style: inset;
+  padding: 5px;
+}
+/* line 7, ../../app/stylesheets/_forms.sass */
+form p {
+  margin-bottom: 10px;
+}
+/* line 9, ../../app/stylesheets/_forms.sass */
+form label {
+  display: block;
+}
+/* line 11, ../../app/stylesheets/_forms.sass */
+form .input {
+  margin-top: 20px;
+}
+
+/* line 14, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 16, ../../app/stylesheets/screen.sass */
+/* line 17, ../../app/stylesheets/screen.sass */
 .button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -808,39 +818,39 @@ h1, h2, h3 {
   box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
 }
 
-/* line 19, ../../app/stylesheets/screen.sass */
+/* line 20, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #cccccc;
   position: relative;
 }
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 24, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 28, ../../app/stylesheets/screen.sass */
+/* line 29, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 31, ../../app/stylesheets/screen.sass */
+/* line 32, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-/* line 36, ../../app/stylesheets/screen.sass */
+/* line 37, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
@@ -850,12 +860,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 #sidebar {
   margin-top: 20px;
   border: 1px solid #cccccc;
 }
-/* line 52, ../../app/stylesheets/screen.sass */
+/* line 53, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -867,7 +877,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 57, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0 1px;
   display: block;
@@ -877,28 +887,28 @@ h1, h2, h3 {
   font-size: 15px;
   color: #666666;
 }
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
   text-decoration: underline;
 }
-/* line 67, ../../app/stylesheets/screen.sass */
+/* line 68, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 72, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   font-style: normal;
 }
-/* line 74, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 77, ../../app/stylesheets/screen.sass */
+/* line 78, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -909,7 +919,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 86, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;
