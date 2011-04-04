@@ -744,14 +744,19 @@ form input[type=text], form input[type=password], form textarea {
   padding: 5px;
 }
 /* line 7, ../../app/stylesheets/_forms.sass */
+form input[type=submit] {
+  display: block;
+  margin-top: 10px;
+}
+/* line 10, ../../app/stylesheets/_forms.sass */
 form p {
   margin-bottom: 10px;
 }
-/* line 9, ../../app/stylesheets/_forms.sass */
+/* line 12, ../../app/stylesheets/_forms.sass */
 form label {
   display: block;
 }
-/* line 11, ../../app/stylesheets/_forms.sass */
+/* line 14, ../../app/stylesheets/_forms.sass */
 form .input {
   margin-bottom: 20px;
   margin-top: 20px;

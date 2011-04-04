@@ -21,7 +21,7 @@ class Folder < ActiveRecord::Base
       end
       array << folder_tree
     end
-    return array
+    array.sort! { |a, b| a[0].downcase <=> b[0].downcase }
   end
 
 end
