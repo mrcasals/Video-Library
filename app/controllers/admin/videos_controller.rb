@@ -10,34 +10,38 @@ class Admin::VideosController < Admin::ApplicationController
 
   def create
     @video = Video.new(params[:video])
-    @video.folder = current_folder
+    @video.folder = Folder.where(:id => params[:folder_id]).first
+
 
     create! do |success, failure|
       success.html{
-        redirect_to_folder
+        redirect_to_folder @video.folder
       }
     end
   end
 
   def destroy
+    @video = Video.find(params[:id])
+    folder = @video.folder
+
     destroy! do |success, failure|
-      success.hmtl{
-        redirect_to_folder
+      success.html{
+        redirect_to_folder folder
       }
     end
   end
 
   protected
 
-  def current_folder
-    Folder.where(:id => params[:folder_id]).first
-  end
+  # def current_folder
+  #   Folder.where(:id => params[:folder_id]).first
+  # end
 
-  def redirect_to_folder
+  def redirect_to_folder(current_folder = nil)
     if current_folder
       redirect_to admin_folder_path(current_folder)
     else
-      redirect_to admin_folder_path
+      redirect_to admin_dashboards_path
     end
   end
 end

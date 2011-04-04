@@ -14,4 +14,4 @@ article.video
   .actions
     -if current_user.admin? || current_user == video.user
       =link_to "Edita", edit_admin_video_path(video), :class => 'button'
-      =link_to "Elimina", {:action => :destroy}, :id => video, :confirm => "Segur que vols eliminar el vídeo?", :class => 'button'
+      =link_to "Elimina", admin_video_path(video), :method => :delete, :confirm => "Segur que vols eliminar el vídeo?", :class => 'button'
