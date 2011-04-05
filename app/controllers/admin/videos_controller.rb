@@ -10,7 +10,7 @@ class Admin::VideosController < Admin::ApplicationController
 
   def create
     @video = Video.new(params[:video])
-    @video.folder = Folder.where(:id => params[:folder_id]).first
+    @video.user = current_user
 
 
     create! do |success, failure|
@@ -32,10 +32,6 @@ class Admin::VideosController < Admin::ApplicationController
   end
 
   protected
-
-  # def current_folder
-  #   Folder.where(:id => params[:folder_id]).first
-  # end
 
   def redirect_to_folder(current_folder = nil)
     if current_folder

@@ -11,17 +11,16 @@ class Folder < ActiveRecord::Base
   validates :name, presence: true
 
   def self.name_with_tree
-    array = Array.new
-    Folder.all.each do |folder|
+    folders = Folder.includes(:parent).all.collect do |folder|
       if !folder.parent_id.blank?
         folder_name = "#{folder.parent.name} -> #{folder.name}"
         folder_tree = [ folder_name, folder.id ]
       else
         folder_tree = [ folder.name, folder.id ]
       end
-      array << folder_tree
+      folder_tree
     end
-    array.sort! { |a, b| a[0].downcase <=> b[0].downcase }
+    folders.sort! { |a, b| a[0].downcase <=> b[0].downcase }
   end
 
 end

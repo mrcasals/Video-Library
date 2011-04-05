@@ -1,4 +1,4 @@
 section.video_form
   h3 Afegeix un vídeo
-  =simple_form_for @video, :url => admin_video_path(@video), :html => {:method=>:put} do |f|
+  =simple_form_for :video, :url => admin_videos_path, :html => {:method=>:post} do |f|
     =render :partial => 'admin/videos/form', :object => f
