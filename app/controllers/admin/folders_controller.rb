@@ -1,5 +1,7 @@
 class Admin::FoldersController < Admin::ApplicationController
 
+  before_filter :authenticate_admin!, :only => [:create, :update, :destroy]
+
   inherit_resources
   belongs_to :folder, :optional => true
 
