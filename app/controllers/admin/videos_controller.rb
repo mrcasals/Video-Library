@@ -1,5 +1,7 @@
 class Admin::VideosController < Admin::ApplicationController
 
+  before_filter :authenticate_admin!, :only => [:create, :destroy]
+
   inherit_resources
 
   def update
