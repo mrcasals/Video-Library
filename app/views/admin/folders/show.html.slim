@@ -1,5 +1,8 @@
 section.folders
   .folder-actions
-    =link_to 'Elimina la carpeta', ['admin', @folder], :confirm => 'N\'estàs segur?', :method => :delete, :class => 'button'
+    =link_to 'Elimina aquesta carpeta', ['admin', @folder], :confirm => 'N\'estàs segur? S\'eliminaran tots els vídeos  i carpetes que contingui.', :method => :delete, :class => 'button'
+    =link_to 'Edita aquesta carpeta', edit_admin_folder_path(@folder), :class => 'button'
+    =link_to 'Afegeix una carpeta', new_admin_folder_path, :class => 'button'
+    =link_to 'Afegeix un vídeo', admin_dashboards_path, :class => 'button'
   -Video.by_folder(@folder).each do |video|
     =render :partial => 'admin/folders/video', :object => video
