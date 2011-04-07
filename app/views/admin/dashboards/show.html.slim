@@ -1,5 +1,6 @@
 section.form
-  =link_to 'Afegeix una carpeta', new_admin_folder_path, :class => 'button'
+  -if current_user.admin?
+    =link_to 'Afegeix una carpeta', new_admin_folder_path, :class => 'button'
   h3 Afegeix un vídeo
   =simple_form_for :video, :url => admin_videos_path, :html => {:method=>:post} do |f|
     =render :partial => 'admin/videos/form', :object => f
