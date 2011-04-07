@@ -37,7 +37,7 @@ class Admin::VideosController < Admin::ApplicationController
     if current_folder
       redirect_to admin_folder_path(current_folder)
     else
-      redirect_to admin_dashboards_path
+      redirect_to admin_dashboard_path
     end
   end
 end

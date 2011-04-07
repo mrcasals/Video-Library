@@ -1,0 +1,4 @@
+section.form
+  h3 Afegeix una carpeta
+  =simple_form_for :folder, :url => admin_folders_path, :html => {:method=>:post} do |f|
+    =render :partial => 'form', :object => f

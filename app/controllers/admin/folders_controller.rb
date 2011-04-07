@@ -5,18 +5,17 @@ class Admin::FoldersController < Admin::ApplicationController
 
   def create
     @folder = Folder.new(params[:folder])
-    @folder.parent = current_folder if current_folder
 
     create! do |success, failure|
       success.html{
-        redirect_to_folder
+        redirect_to ['admin', @folder]
       }
     end
   end
 
   def destroy
     destroy! do |success, failure|
-      success.hmtl{
+      success.html{
         redirect_to_folder
       }
     end
@@ -32,7 +31,7 @@ class Admin::FoldersController < Admin::ApplicationController
     if current_folder
       redirect_to admin_folder_path(current_folder)
     else
-      redirect_to admin_folder_path
+      redirect_to admin_dashboards_path
     end
   end
 end

@@ -8,6 +8,8 @@ class Folder < ActiveRecord::Base
 
   default_scope order(:name)
 
+  scope :root, where(:parent_id => nil)
+
   validates :name, presence: true
 
   def self.name_with_tree

@@ -1,7 +1,7 @@
 section#sidebar
   nav.folders
     ul
-      -root_folders.each do |f|
+      -Folder.root.each do |f|
         li 
           =link_to "<span>#{f.name}</span>".html_safe, admin_folder_path(f)
           -unless f.folders.empty?

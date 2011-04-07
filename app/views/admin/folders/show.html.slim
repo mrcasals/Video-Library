@@ -1,3 +1,5 @@
 section.folders
+  .folder-actions
+    =link_to 'Elimina la carpeta', ['admin', @folder], :confirm => 'N\'estàs segur?', :method => :delete, :class => 'button'
   -Video.by_folder(@folder).each do |video|
     =render :partial => 'admin/folders/video', :object => video

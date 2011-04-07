@@ -703,35 +703,53 @@ body {
 }
 
 /* line 3, ../../app/stylesheets/_admin.sass */
+#admin #content .button {
+  text-decoration: none;
+}
+/* line 6, ../../app/stylesheets/_admin.sass */
+#admin #content .form .button {
+  float: right;
+}
+/* line 9, ../../app/stylesheets/_admin.sass */
+#admin #content .folders .folder-actions {
+  overflow: auto;
+  display: block;
+}
+/* line 12, ../../app/stylesheets/_admin.sass */
+#admin #content .folders .folder-actions .button {
+  float: right;
+}
+/* line 14, ../../app/stylesheets/_admin.sass */
 #admin #content .video {
   padding-bottom: 20px;
   overflow: auto;
   padding-bottom: 0;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
-/* line 8, ../../app/stylesheets/_admin.sass */
+/* line 20, ../../app/stylesheets/_admin.sass */
 #admin #content .video .video-info {
   width: 495px;
   float: left;
 }
-/* line 12, ../../app/stylesheets/_admin.sass */
+/* line 24, ../../app/stylesheets/_admin.sass */
 #admin #content .video .video-info h3 a {
   color: black;
   text-decoration: none;
   font-style: normal;
 }
-/* line 16, ../../app/stylesheets/_admin.sass */
+/* line 28, ../../app/stylesheets/_admin.sass */
 #admin #content .video .actions {
   float: right;
   width: 135px;
 }
-/* line 19, ../../app/stylesheets/_admin.sass */
+/* line 31, ../../app/stylesheets/_admin.sass */
 #admin #content .video .actions a {
   text-decoration: none;
   font-style: normal;
 }
 
-/* line 2, ../../app/stylesheets/_forms.sass */
+/* line 3, ../../app/stylesheets/_forms.sass */
 form input[type=text], form input[type=password], form textarea {
   color: #666666;
   -moz-border-radius: 5px;
@@ -743,31 +761,31 @@ form input[type=text], form input[type=password], form textarea {
   border-style: inset;
   padding: 5px;
 }
-/* line 7, ../../app/stylesheets/_forms.sass */
+/* line 13, ../../app/stylesheets/_forms.sass */
 form input[type=submit] {
   display: block;
   margin-top: 10px;
 }
-/* line 10, ../../app/stylesheets/_forms.sass */
+/* line 19, ../../app/stylesheets/_forms.sass */
 form p {
   margin-bottom: 10px;
 }
-/* line 12, ../../app/stylesheets/_forms.sass */
+/* line 23, ../../app/stylesheets/_forms.sass */
 form label {
   display: block;
 }
-/* line 14, ../../app/stylesheets/_forms.sass */
+/* line 27, ../../app/stylesheets/_forms.sass */
 form .input {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-/* line 14, ../../app/stylesheets/screen.sass */
+/* line 27, ../../app/stylesheets/screen.sass */
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
-/* line 17, ../../app/stylesheets/screen.sass */
+/* line 33, ../../app/stylesheets/screen.sass */
 .button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -824,39 +842,39 @@ h1, h2, h3 {
   box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
 }
 
-/* line 20, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 #header {
   min-height: 150px;
   border-bottom: 1px solid #cccccc;
   position: relative;
 }
-/* line 24, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 #header h1 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 30px;
   margin-left: 20px;
 }
-/* line 29, ../../app/stylesheets/screen.sass */
+/* line 57, ../../app/stylesheets/screen.sass */
 #header h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 32, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #header h2 {
   color: #888888;
   font-size: 14px;
   font-style: italic;
   margin-left: 20px;
 }
-/* line 37, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #header #user-links {
   position: absolute;
   bottom: 0;
   right: 0;
   float: left;
 }
-/* line 42, ../../app/stylesheets/screen.sass */
+/* line 83, ../../app/stylesheets/screen.sass */
 #header #user-links a {
   margin-left: 5px;
   padding: 5px 5px 1px;
@@ -866,12 +884,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 99, ../../app/stylesheets/screen.sass */
 #sidebar {
   margin-top: 20px;
   border: 1px solid #cccccc;
 }
-/* line 53, ../../app/stylesheets/screen.sass */
+/* line 105, ../../app/stylesheets/screen.sass */
 #sidebar .folders {
   list-style: none;
   margin-top: -1px;
@@ -883,7 +901,7 @@ h1, h2, h3 {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 57, ../../app/stylesheets/screen.sass */
+/* line 113, ../../app/stylesheets/screen.sass */
 #sidebar .folders a {
   padding: 10px 0 1px;
   display: block;
@@ -893,28 +911,28 @@ h1, h2, h3 {
   font-size: 15px;
   color: #666666;
 }
-/* line 65, ../../app/stylesheets/screen.sass */
+/* line 129, ../../app/stylesheets/screen.sass */
 #sidebar .folders a:hover {
   text-decoration: underline;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
+/* line 135, ../../app/stylesheets/screen.sass */
 #sidebar .folders span {
   margin-left: 20px;
 }
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders {
   margin-top: -1px;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 145, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders a {
   font-style: normal;
 }
-/* line 75, ../../app/stylesheets/screen.sass */
+/* line 149, ../../app/stylesheets/screen.sass */
 #sidebar .folders ul.subfolders span {
   margin-left: 35px;
 }
 
-/* line 78, ../../app/stylesheets/screen.sass */
+/* line 155, ../../app/stylesheets/screen.sass */
 #footer {
   height: 50px;
   background-color: #cccccc;
@@ -925,7 +943,7 @@ h1, h2, h3 {
   line-height: 50px;
   text-align: center;
 }
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 173, ../../app/stylesheets/screen.sass */
 #footer a {
   color: black;
   font-weight: bold;

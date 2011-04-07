@@ -1,0 +1,4 @@
+section.form
+  h3 Edita la carpeta
+  =simple_form_for ['admin', @folder], :url => admin_folder_path(@folder), :html => {:method=>:put} do |f|
+    =render :partial => 'form', :object=>f
